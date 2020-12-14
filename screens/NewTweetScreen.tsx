@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {StyleSheet, TouchableOpacity, SafeAreaView, TextInput, Platform, Image} from 'react-native';
 import { Text, View } from '../components/Themed';
-import {AntDesign} from "@expo/vector-icons";
+import {AntDesign, FontAwesome5} from "@expo/vector-icons";
 import Colors from "../constants/Colors";
 import ProfilePicture from "../components/ProfilePicture";
 import {useEffect, useState} from "react";
@@ -12,6 +12,8 @@ import * as Permissions from 'expo-permissions';
 import * as ImagePicker from 'expo-image-picker';
 import 'react-native-get-random-values';
 import { v4 as uuidv4 } from 'uuid';
+import Icon from 'react-native-ionicons';
+import DropDownPicker from 'react-native-dropdown-picker';
 
 export default function NewTweetScreen() {
   const[tweet, setTweet] = useState("");
@@ -100,7 +102,7 @@ export default function NewTweetScreen() {
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.button} onPress={onPostTweet}>
-            <Text style={styles.buttonText}>Tweet</Text>
+            <Text style={styles.buttonText}>Post</Text>
           </TouchableOpacity>
         </View>
 
@@ -113,15 +115,16 @@ export default function NewTweetScreen() {
                 multiline={true}
                 numberOfLines={3}
                 style={styles.tweetInput}
-                placeholder={"What's happening?"}
+                placeholder={"Give opinion?"}
             />
             <TouchableOpacity onPress={pickImage}>
-              <Text style={styles.pickImage}>Choose image</Text>
+              {/*<Text style={styles.pickImage}>Choose image</Text>*/}
+              <FontAwesome5 name="camera" style={styles.pickImage}/>
             </TouchableOpacity>
             <Image source={{uri: imageUrl}} style={styles.image}/>
           </View>
-
         </View>
+
       </SafeAreaView>
   );
 }
@@ -157,12 +160,13 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     marginLeft: 10,
-
+    // borderWidth : 1,
   },
   tweetInput: {
     height: 100,
     maxHeight: 300,
     fontSize: 20,
+    textAlign: 'center',
     // borderColor: 'gray',
     // borderWidth: 1,
   },
@@ -173,8 +177,8 @@ const styles = StyleSheet.create({
   },
   pickImage: {
     color: Colors.light.tint,
-    fontSize: 18,
-    marginVertical: 10,
+    fontSize: 40,
+    textAlign: 'center',
   },
   image: {
     width: 250,

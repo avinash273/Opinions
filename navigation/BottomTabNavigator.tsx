@@ -62,6 +62,7 @@ export default function BottomTabNavigator() {
 // You can explore the built-in icon families and icons on the web at:
 // https://icons.expo.fyi/
 function TabBarIcon(props: { name: string; color: string }) {
+    // @ts-ignore
     return <Ionicons size={30} style={{ marginBottom: -3 }} {...props} />;
 }
 
@@ -105,10 +106,10 @@ function HomeNavigator() {
                         marginLeft: 15,
                     },
                     headerTitle: () => (
-                        <Ionicons name={"logo-twitter"} size={40} color={Colors.light.tint}/>
+                        // <Ionicons name={"logo-twitter"} size={40} color={Colors.light.tint}/>
                         //<Ionicons name={"logo-react"} size={30} color={Colors.light.tint}/>
                         // <AntDesign name="aliwangwang" size={40} color={Colors.light.tint} />
-                        // <Entypo name="chat" size={40} color={Colors.light.tint} />
+                        <Entypo name="chat" size={40} color={Colors.light.tint} />
 
 
 

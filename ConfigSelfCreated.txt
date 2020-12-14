@@ -1,0 +1,389 @@
+avinashshanker@Avinashs-MBP TwitterClone % history - 150
+  150  ls
+  151  cd DoneWithIt
+  152  clear
+  153  ls -ltr
+  154  pwd
+  155  code .
+  156  echo $HOME
+  157  [ -d "$HOME/Library/Android/sdk" ] && ANDROID_SDK=$HOME/Library/Android/sdk || ANDROID_SDK=$HOME/Android/Sdk
+  158  echo "export ANDROID_SDK=$ANDROID_SDK" >> ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
+  159  code ~/.bash_profile
+  160  where code
+  161  ls -l /usr/local/bin/code
+  162  code ~/.bash_profile
+  163  echo $ANDROID_SDK
+  164  open -e .bash_profile
+  165  cd ~
+  166  cd !
+  167  cd ~
+  168  pwd
+  169  open -e .bash_profile
+  170  ls -ltra
+  171  clear
+  172  echo '.bash_profile'
+  173  echo .bash_profile
+  174  code ~/.bash_profile
+  175  echo $PATH
+  176  echo "export PATH=$HOME/Library/Android/sdk/platform-tools:\$PATH" >> ~/`[[ $SHELL == *"zsh" ]] && echo '.zshenv' || echo '.bash_profile'`
+  177  ls -ltra
+  178  cat .zshenv
+  179  ls -ltra
+  180  clear
+  181  code ~/.zshrc
+  182  ls -ltra
+  183  adb
+  184  adb
+  185  pwd
+  186  code ~/.zshrc
+  187  clear
+  188  ls -ltra
+  189  adb
+  190  npm start
+  191  claer
+  192  claer
+  193  claer
+  194  clear
+  195  adb
+  196  clear
+  197  ls
+  198  cd Desk*
+  199  ls -ltr
+  200  cd Code*
+  201  ls -ltr
+  202  cd React
+  203  ;s
+  204  ls
+  205  clear
+  206  ls -ltr
+  207  cd Opi*
+  208  ls
+  209  clear
+  210  npm install
+  211  react-native start
+  212  react-native run-android
+  213  cd ~
+  214  ls -ltra
+  215  cat .zshrc
+  216  clear
+  217  npm start
+  218  pwd
+  219  cd -
+  220  pwd
+  221  npm start
+  222  ls -ltr
+  223  clae
+  224  clear
+  225  ls -ltr
+  226  cd client
+  227  ls
+  228  cd ..
+  229  ls -ltr
+  230  cd client
+  231  clear
+  232  ls -ltr
+  233  pwd
+  234  npm install
+  235  clear
+  236  ls -ltr
+  237  npm start
+  238  exit
+  239  pwd
+  240  cd /Users/avinashshanker/Desktop/CodeWorkSpace/React/Opinions-App/client
+  241  npm start
+  242  cd ..
+  243  cd ..
+  244  clear
+  245  clear
+  246  ls -ltr
+  247  cd rn*
+  248  clear
+  249  ls -ltr
+  250  npm install
+  251  npm start
+  252  clear
+  253  clear
+  254  exit
+  255  npm start
+  256  npm start
+  257  npm start
+  258  pwd
+  259  claer
+  260  clear
+  261  ls
+  262  cd client
+  263  clear
+  264  npm start
+  265  pwd
+  266  clear
+  267  npm start
+  268  yarn --version
+  269  sudo port install yarn
+  270  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  271  clear
+  272  brew install yarn
+  273  clear
+  274  yarn --version
+  275  homebrew --version
+  276  homebrew -v
+  277  clear
+  278  pwd
+  279  amplify init
+  280  amplify add auth
+  281  amplify push
+  282  yarn add aws-amplify aws-amplify-react-native @react-native-community/netinfo
+  283  yarn start
+  284  cd ~
+  285  sudo npm install -g @aws-amplify/cli
+  286  amplify configure
+  287  cd ~
+  288  npm install --global expo-cli
+  289  sudo npm install --global expo-cli
+  290  clear
+  291  pwd
+  292  ls -ltr
+  293  cd Desk*
+  294  ls
+  295  cd Code(
+  296  cd DEsk*
+  297  cd Desk*
+  298  ls
+  299  cd Code*
+  300  ls
+  301  cd Rea*
+  302  clear
+  303  ls -ltr
+  304  expo init TwitterClone
+  305  ls
+  306  claer
+  307  clear
+  308  cd Twi*
+  309  ls
+  310  clear
+  311  ls -ltr
+  312  npm start
+  313  clear
+  314  cd ..
+  315  sl
+  316  ls
+  317  yarn create react-app TwitterClone
+  318  yarn create react-app Twitter
+  319  clear
+  320  ls
+  321  clear
+  322  expo init TwitterClone
+  323  clear
+  324  ls
+  325  cd Tw*
+  326  ls
+  327  clear
+  328  ls -ltr
+  329  yarn start
+  330  clear
+  331  /Users/avinashshanker/Desktop/CodeWorkSpace/React
+  332  cd /Users/avinashshanker/Desktop/CodeWorkSpace/React
+  333  cler
+  334  clear
+  335  expo init TwitterClone
+  336  yarn start
+  337  yarn add moment
+  338  yarn start
+  339  pwd
+  340  date
+  341  clear
+  342  amplify init
+  343  amplify status
+  344  amplify add auth
+  345  amplify push
+  346  amplify console
+  347  clear
+  348  amplify add auth
+  349  amplify push
+  350  amplify console
+  351  clear
+  352  amplify console
+  353  clear
+  354  yarn add install aws-amplify aws-amplify-react-native @react-native-community/netinfo
+  355  amplify add api
+  356  amplify push
+  357  sudo amplify push
+  358  amplify push
+  359  amplify push
+  360   mkdir /graphql
+  361   mkdir graphql
+  362  amplify push
+  363  amplify console api
+  364  clear
+  365  yarn start
+  366  ls
+  367  cd Desk*
+  368  ls
+  369  cd Code*
+  370  ls -ltr
+  371  cd React
+  372  ls -ltra
+  373  ls -ltra
+  374  cd /
+  375  pwd
+  376  pwd
+  377  ls
+  378  cd /Users/avinashshanker/Desktop/CodeWorkSpace
+  379  chmod -R 777 /Users/avinashshanker/Desktop/CodeWorkSpace
+  380  sudo chmod -R 777 /Users/avinashshanker/Desktop/CodeWorkSpace
+  381  ls -ltra /Users/avinashshanker/Desktop/CodeWorkSpace/React/TwitterClone/amplify/backend/api/twitterclone/build/cloudformation
+  382  ls -ltra /Users/avinashshanker/Desktop/CodeWorkSpace/React/TwitterClone/amplify/backend/api/twitterclone/build/
+  383  amplify console api
+  384  yarn start
+  385  yarn start
+  386  amplify console api
+  387  amplify console api
+  388  clear
+  389  amplify push
+  390  clear
+  391  amplify add storage
+  392  amplify push
+  393  clear
+  394  expo install expo-image-picker
+  395  clear
+  396  yarn add uuid
+  397  npm install uuid
+  398  clear
+  399  yarn add uuid
+  400  yarn start
+  401  yarn add uuid
+  402  yarn add @types/uuid
+  403  yarn start
+  404  cd /Users/avinashshanker/Desktop/CodeWorkSpace
+  405  pwd
+  406  clear
+  407  clear
+  408  ls -ltr
+  409  cd React
+  410  ls
+  411  expo init Opinions
+  412  yarn add uuid
+  413  yarn start
+  414  yarn add moment
+  415  clear
+  416  amplify cli
+  417  amplify init
+  418  amplify add auth
+  419  amplify push
+  420  yarn add aws-amplify-react-native @react-native-community/netinfo
+  421  amplify console
+  422  amplify add api
+  423  amplify push
+  424  clear
+  425  amplify push
+  426  amplify console api
+  427  npm install @expo/vector-icons
+  428  clear
+  429  expo install expo-image-picker
+  430  yarn add react-native-vector-icon
+  431  yarn add ionicons
+avinashshanker@Avinashs-MBP TwitterClone %
+
+opions start here..up twitter
+*************************************************
+avinashshanker@Avinashs-MBP Opinions % history -100
+  335  expo init TwitterClone
+  336  yarn start
+  337  yarn add moment
+  338  yarn start
+  339  pwd
+  340  date
+  341  clear
+  342  amplify init
+  343  amplify status
+  344  amplify add auth
+  345  amplify push
+  346  amplify console
+  347  clear
+  348  amplify add auth
+  349  amplify push
+  350  amplify console
+  351  clear
+  352  amplify console
+  353  clear
+  354  yarn add install aws-amplify aws-amplify-react-native @react-native-community/netinfo
+  355  amplify add api
+  356  amplify push
+  357  sudo amplify push
+  358  amplify push
+  359  amplify push
+  360   mkdir /graphql
+  361   mkdir graphql
+  362  amplify push
+  363  amplify console api
+  364  clear
+  365  yarn start
+  366  ls
+  367  cd Desk*
+  368  ls
+  369  cd Code*
+  370  ls -ltr
+  371  cd React
+  372  ls -ltra
+  373  ls -ltra
+  374  cd /
+  375  pwd
+  376  pwd
+  377  ls
+  378  cd /Users/avinashshanker/Desktop/CodeWorkSpace
+  379  chmod -R 777 /Users/avinashshanker/Desktop/CodeWorkSpace
+  380  sudo chmod -R 777 /Users/avinashshanker/Desktop/CodeWorkSpace
+  381  ls -ltra /Users/avinashshanker/Desktop/CodeWorkSpace/React/TwitterClone/amplify/backend/api/twitterclone/build/cloudformation
+  382  ls -ltra /Users/avinashshanker/Desktop/CodeWorkSpace/React/TwitterClone/amplify/backend/api/twitterclone/build/
+  383  amplify console api
+  384  yarn start
+  385  yarn start
+  386  amplify console api
+  387  amplify console api
+  388  clear
+  389  amplify push
+  390  clear
+  391  amplify add storage
+  392  amplify push
+  393  clear
+  394  expo install expo-image-picker
+  395  clear
+  396  yarn add uuid
+  397  npm install uuid
+  398  clear
+  399  yarn add uuid
+  400  yarn start
+  401  yarn add uuid
+  402  yarn add @types/uuid
+  403  yarn start
+  404  cd /Users/avinashshanker/Desktop/CodeWorkSpace
+  405  pwd
+  406  clear
+  407  clear
+  408  ls -ltr
+  409  cd React
+  410  ls
+  411  expo init Opinions
+  412  yarn add uuid
+  413  yarn start
+  414  yarn add moment
+  415  clear
+  416  amplify cli
+  417  amplify init
+  418  amplify add auth
+  419  amplify push
+  420  yarn add aws-amplify-react-native @react-native-community/netinfo
+  421  amplify console
+  422  amplify add api
+  423  amplify push
+  424  clear
+  425  amplify push
+  426  amplify console api
+  427  npm install @expo/vector-icons
+  428  clear
+  429  expo install expo-image-picker
+  430  yarn add react-native-vector-icon
+  431  yarn add ionicons
+  432  amplify push
+  433  yarn add @types/uuid
+  434  history
+avinashshanker@Avinashs-MBP Opinions %

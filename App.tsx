@@ -23,7 +23,7 @@ function App() {
 
   //need to change this image
   const getRandomImage = () => {
-    return 'https://cdn.fastly.picmonkey.com/contentful/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=800&q=70'
+    return 'https://picsum.photos/200/300'
   }
 
   const saveUserToDB = async (user: { id: any; username: any; name: any; email: any; image: string; }) => {

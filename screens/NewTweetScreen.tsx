@@ -14,6 +14,7 @@ import 'react-native-get-random-values';
 import { v4 as uuidv4 } from 'uuid';
 import Icon from 'react-native-ionicons';
 import DropDownPicker from 'react-native-dropdown-picker';
+import NewPicker from "../components/TopicPicker";
 
 export default function NewTweetScreen() {
   const[tweet, setTweet] = useState("");
@@ -96,6 +97,7 @@ export default function NewTweetScreen() {
 
   return (
       <SafeAreaView style={styles.container}>
+
         <View style={styles.headerContainer}>
           <TouchableOpacity onPress={() => navigation.goBack()}>
             <AntDesign  name ="close" size={30} color={Colors.light.tint} />
@@ -104,11 +106,19 @@ export default function NewTweetScreen() {
           <TouchableOpacity style={styles.button} onPress={onPostTweet}>
             <Text style={styles.buttonText}>Post</Text>
           </TouchableOpacity>
+
         </View>
 
+        <View style={styles.topicPicker}>
+          <NewPicker />
+        </View>
+
+
+
         <View style={styles.newTweetContainer}>
-          <ProfilePicture image={'https://avatars2.githubusercontent.com/u/30752963?s=400&u=a7fe229140729395e1ebceae6bcf607e3aecb8f3&v=4'} />
+          <ProfilePicture image={'https://picsum.photos/400'} />
           <View style={styles.inputContainer}>
+
             <TextInput
                 value={tweet}
                 onChangeText={(value) => setTweet(value)}
@@ -125,6 +135,8 @@ export default function NewTweetScreen() {
           </View>
         </View>
 
+
+
       </SafeAreaView>
   );
 }
@@ -132,9 +144,15 @@ export default function NewTweetScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingVertical:30,
     alignItems: 'flex-start',
     backgroundColor: 'white',
     // justifyContent: 'center',
+  },
+  topicPicker: {
+    flex: 1,
+    alignItems: 'flex-end',
+    justifyContent: 'center',
   },
   button: {
     backgroundColor: Colors.light.tint,
@@ -179,6 +197,7 @@ const styles = StyleSheet.create({
     color: Colors.light.tint,
     fontSize: 40,
     textAlign: 'center',
+    paddingLeft: 80,
   },
   image: {
     width: 250,

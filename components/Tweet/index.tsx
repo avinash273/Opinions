@@ -11,7 +11,10 @@ export type TweetProps = {
 
 const Tweet = ({ tweet }: TweetProps) => (
     <View style={styles.container}>
+        {/*only profile picture*/}
         <LeftContainer user={tweet.user} />
+
+        {/*has only tweets*/}
         <MainContainer tweet={tweet}/>
     </View>
 )

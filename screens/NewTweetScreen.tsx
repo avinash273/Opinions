@@ -147,12 +147,11 @@ const styles = StyleSheet.create({
     paddingVertical:30,
     alignItems: 'flex-start',
     backgroundColor: 'white',
-    // justifyContent: 'center',
+    justifyContent: 'center',
   },
   topicPicker: {
     flex: 1,
     alignItems: 'flex-end',
-    justifyContent: 'center',
   },
   button: {
     backgroundColor: Colors.light.tint,
@@ -197,7 +196,7 @@ const styles = StyleSheet.create({
     color: Colors.light.tint,
     fontSize: 40,
     textAlign: 'center',
-    paddingLeft: 80,
+    paddingLeft: 10,
   },
   image: {
     width: 250,

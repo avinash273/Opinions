@@ -1,14 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useEffect} from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-
-//https://docs.amplify.aws/start/getting-started/auth/q/integration/react-native
-// @ts-ignore
-import { withAuthenticator } from 'aws-amplify-react-native';
 import Amplify, {Auth, API, graphqlOperation} from 'aws-amplify';
+import { LogBox } from 'react-native';
 // @ts-ignore
 import config from './aws-exports';
 Amplify.configure(config);
+//https://docs.amplify.aws/start/getting-started/auth/q/integration/react-native
+// @ts-ignore
+import { Authenticator, withAuthenticator, AmplifyTheme } from 'aws-amplify-react-native';
 
 import useCachedResources from './hooks/useCachedResources';
 import useColorScheme from './hooks/useColorScheme';
@@ -18,6 +18,10 @@ import { createUser } from './graphql/mutations';
 import 'react-native-get-random-values';
 
 function App() {
+
+  LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
+  LogBox.ignoreAllLogs();//Ignore all log notifications
+
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();
 
@@ -71,6 +75,7 @@ function App() {
     );
   }
 }
+
 
 export default withAuthenticator(App);
 /**

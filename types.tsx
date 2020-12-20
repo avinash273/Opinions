@@ -2,21 +2,32 @@ export type RootStackParamList = {
   Root: undefined;
   NewTweet: undefined;
   NotFound: undefined;
+  Statistics: undefined;
+  Logout: undefined;
 };
 
 export type BottomTabParamList = {
   Home: undefined;
   Search: undefined;
-  Notifications: undefined;
-  Messages: undefined;
+  Statistics: undefined;
+  Logout: undefined;
 };
 
 export type HomeNavigatorParamList = {
   HomeScreen: undefined;
+
 };
 
 export type TabTwoParamList = {
   TabTwoScreen: undefined;
+};
+
+export type TabThreeParamList = {
+  TabThreeScreen: undefined;
+};
+
+export type StatisticsParamList = {
+  Statistics: undefined;
 };
 
 export type UserType = {

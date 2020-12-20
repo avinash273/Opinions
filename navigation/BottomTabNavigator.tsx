@@ -1,4 +1,4 @@
-import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
+import {Foundation, Ionicons, MaterialCommunityIcons} from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import {AntDesign} from "@expo/vector-icons";
@@ -9,7 +9,15 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import HomeScreen from '../screens/HomeScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
-import { BottomTabParamList, HomeNavigatorParamList, TabTwoParamList } from '../types';
+import TabThreeScreen from '../screens/TabThreeScreen';
+import Statistics from '../screens/Statistics';
+import {
+    BottomTabParamList,
+    HomeNavigatorParamList,
+    TabTwoParamList,
+    TabThreeParamList,
+    StatisticsParamList
+} from '../types';
 import ProfilePicture from '../components/ProfilePicture';
 import {useEffect, useState} from "react";
 import {API, Auth, graphqlOperation} from 'aws-amplify';
@@ -42,17 +50,17 @@ export default function BottomTabNavigator() {
                 }}
             />
             <BottomTab.Screen
-                name="Notifications"
-                component={TabTwoNavigator}
+                name="Statistics"
+                component={StatisticsNavigator}
                 options={{
-                    tabBarIcon: ({ color }) => <TabBarIcon name="ios-notifications-outline" color={color} />,
+                    tabBarIcon: ({ color }) => <Ionicons name="stats-chart" color={color} size={25} />,
                 }}
             />
             <BottomTab.Screen
-                name="Messages"
-                component={TabTwoNavigator}
+                name="Logout"
+                component={TabThreeNavigator}
                 options={{
-                    tabBarIcon: ({ color }) => <TabBarIcon name="ios-mail" color={color} />,
+                    tabBarIcon: ({ color }) => <Entypo name="user" color={color} size={25} />,
                 }}
             />
         </BottomTab.Navigator>
@@ -107,20 +115,22 @@ function HomeNavigator() {
                     },
                     headerTitle: () => (
                         // <Ionicons name={"logo-twitter"} size={40} color={Colors.light.tint}/>
-                        //<Ionicons name={"logo-react"} size={30} color={Colors.light.tint}/>
+                        <MaterialCommunityIcons name={"react"} size={30} color={Colors.light.tint}/>
                         // <AntDesign name="aliwangwang" size={40} color={Colors.light.tint} />
-                        <Entypo name="chat" size={40} color={Colors.light.tint} />
+                        // <Entypo name="chat" size={40} color={Colors.light.tint} />
 
 
 
                     ),
                     headerRight: () => (
-                        <MaterialCommunityIcons name={"star-four-points-outline"} size={30} color={Colors.light.tint}/>
+                        <MaterialCommunityIcons name={"logout"} size={25} color={Colors.light.tint}/>
+                        //logout
                         // <AntDesign name="star" size={30} color={Colors.light.tint} />
                     ),
                     headerLeft: () => (
                         // @ts-ignore
                         <ProfilePicture size={40} image={user?.image} />
+
                     )
                 }}
             />
@@ -129,15 +139,40 @@ function HomeNavigator() {
 }
 
 const TabTwoStack = createStackNavigator<TabTwoParamList>();
-
 function TabTwoNavigator() {
     return (
         <TabTwoStack.Navigator>
             <TabTwoStack.Screen
                 name="TabTwoScreen"
                 component={TabTwoScreen}
-                options={{ headerTitle: 'Tab Two Title' }}
+                options={{ headerTitle: 'Search' }}
             />
         </TabTwoStack.Navigator>
+    );
+}
+
+const TabThreeStack = createStackNavigator<TabThreeParamList>();
+function TabThreeNavigator() {
+    return (
+        <TabThreeStack.Navigator>
+            <TabThreeStack.Screen
+                name="TabThreeScreen"
+                component={TabThreeScreen}
+                options={{ headerTitle: 'Profile' }}
+            />
+        </TabThreeStack.Navigator>
+    );
+}
+
+const StatisticsStack = createStackNavigator<StatisticsParamList>();
+function StatisticsNavigator() {
+    return (
+        <StatisticsStack.Navigator>
+            <StatisticsStack.Screen
+                name="Statistics"
+                component={Statistics}
+                options={{ headerTitle: 'Statistics' }}
+            />
+        </StatisticsStack.Navigator>
     );
 }

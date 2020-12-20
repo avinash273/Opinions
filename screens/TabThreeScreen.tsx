@@ -7,7 +7,8 @@ import { Text, View } from '../components/Themed';
 export default function TabThreeScreen() {
   return (
       <View style={styles.container}>
-        <Text>User Profile</Text>
+        <Text style={styles.title}>User Profile</Text>
+        <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       </View>
   );
 }

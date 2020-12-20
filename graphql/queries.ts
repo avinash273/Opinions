@@ -105,7 +105,7 @@ export const listTweets = /* GraphQL */ `
           updatedAt
         }
         likes {
-          items {
+        items {
           id
           userID
           tweetID

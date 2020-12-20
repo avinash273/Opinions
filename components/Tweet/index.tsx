@@ -9,6 +9,7 @@ export type TweetProps = {
     tweet: TweetType,
 }
 
+//This is the main one single opinion
 const Tweet = ({ tweet }: TweetProps) => (
     <View style={styles.container}>
         {/*only profile picture*/}

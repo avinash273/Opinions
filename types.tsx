@@ -47,3 +47,4 @@ export type TweetType = {
   numberOfRetweets?: number,
   numberOfLikes?: number,
 }
+

@@ -15,7 +15,7 @@ const Feed = () => {
         //get tweets from backend ans set them to state
         setLoading(true);
         try{
-            const tweetData = await API.graphql(graphqlOperation(listTweets));
+             const tweetData = await API.graphql(graphqlOperation(listTweets));
             // console.log(tweetData);
             // @ts-ignore
             setTweets(tweetData.data.listTweets.items);

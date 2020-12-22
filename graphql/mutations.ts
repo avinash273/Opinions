@@ -19,6 +19,7 @@ export const createUser = /* GraphQL */ `
           content
           image
           userID
+          topic
           createdAt
           updatedAt
         }
@@ -46,6 +47,7 @@ export const updateUser = /* GraphQL */ `
           content
           image
           userID
+          topic
           createdAt
           updatedAt
         }
@@ -73,11 +75,51 @@ export const deleteUser = /* GraphQL */ `
           content
           image
           userID
+          topic
           createdAt
           updatedAt
         }
         nextToken
       }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const createTopic = /* GraphQL */ `
+  mutation CreateTopic(
+    $input: CreateTopicInput!
+    $condition: ModelTopicConditionInput
+  ) {
+    createTopic(input: $input, condition: $condition) {
+      id
+      topicname
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const updateTopic = /* GraphQL */ `
+  mutation UpdateTopic(
+    $input: UpdateTopicInput!
+    $condition: ModelTopicConditionInput
+  ) {
+    updateTopic(input: $input, condition: $condition) {
+      id
+      topicname
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const deleteTopic = /* GraphQL */ `
+  mutation DeleteTopic(
+    $input: DeleteTopicInput!
+    $condition: ModelTopicConditionInput
+  ) {
+    deleteTopic(input: $input, condition: $condition) {
+      id
+      topicname
       createdAt
       updatedAt
     }
@@ -93,6 +135,7 @@ export const createTweet = /* GraphQL */ `
       content
       image
       userID
+      topic
       user {
         id
         username
@@ -130,6 +173,7 @@ export const updateTweet = /* GraphQL */ `
       content
       image
       userID
+      topic
       user {
         id
         username
@@ -167,6 +211,7 @@ export const deleteTweet = /* GraphQL */ `
       content
       image
       userID
+      topic
       user {
         id
         username
@@ -220,6 +265,7 @@ export const createLike = /* GraphQL */ `
         content
         image
         userID
+        topic
         user {
           id
           username
@@ -266,6 +312,7 @@ export const updateLike = /* GraphQL */ `
         content
         image
         userID
+        topic
         user {
           id
           username
@@ -312,6 +359,148 @@ export const deleteLike = /* GraphQL */ `
         content
         image
         userID
+        topic
+        user {
+          id
+          username
+          name
+          email
+          image
+          createdAt
+          updatedAt
+        }
+        likes {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const createTopics = /* GraphQL */ `
+  mutation CreateTopics(
+    $input: CreateTopicsInput!
+    $condition: ModelTopicsConditionInput
+  ) {
+    createTopics(input: $input, condition: $condition) {
+      id
+      userID
+      tweetID
+      user {
+        id
+        username
+        name
+        email
+        image
+        tweets {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      tweet {
+        id
+        content
+        image
+        userID
+        topic
+        user {
+          id
+          username
+          name
+          email
+          image
+          createdAt
+          updatedAt
+        }
+        likes {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const updateTopics = /* GraphQL */ `
+  mutation UpdateTopics(
+    $input: UpdateTopicsInput!
+    $condition: ModelTopicsConditionInput
+  ) {
+    updateTopics(input: $input, condition: $condition) {
+      id
+      userID
+      tweetID
+      user {
+        id
+        username
+        name
+        email
+        image
+        tweets {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      tweet {
+        id
+        content
+        image
+        userID
+        topic
+        user {
+          id
+          username
+          name
+          email
+          image
+          createdAt
+          updatedAt
+        }
+        likes {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const deleteTopics = /* GraphQL */ `
+  mutation DeleteTopics(
+    $input: DeleteTopicsInput!
+    $condition: ModelTopicsConditionInput
+  ) {
+    deleteTopics(input: $input, condition: $condition) {
+      id
+      userID
+      tweetID
+      user {
+        id
+        username
+        name
+        email
+        image
+        tweets {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      tweet {
+        id
+        content
+        image
+        userID
+        topic
         user {
           id
           username

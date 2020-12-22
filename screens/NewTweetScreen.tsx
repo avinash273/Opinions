@@ -1,12 +1,13 @@
 import * as React from 'react';
-import {StyleSheet, TouchableOpacity, SafeAreaView, TextInput, Platform, Image} from 'react-native';
+import {StyleSheet, TouchableOpacity, SafeAreaView, TextInput, Platform, Image, Picker} from 'react-native';
 import { Text, View } from '../components/Themed';
 import {AntDesign, FontAwesome5} from "@expo/vector-icons";
 import Colors from "../constants/Colors";
 import ProfilePicture from "../components/ProfilePicture";
 import {useEffect, useState} from "react";
 import {API, graphqlOperation, Auth, Storage} from 'aws-amplify';
-import { createTweet } from '../graphql/mutations';
+import { createTweet, createTopic } from '../graphql/mutations';
+import { listTopics } from '../graphql/queries';
 import {useNavigation} from "@react-navigation/native";
 import * as Permissions from 'expo-permissions';
 import * as ImagePicker from 'expo-image-picker';
@@ -14,13 +15,36 @@ import 'react-native-get-random-values';
 import { v4 as uuidv4 } from 'uuid';
 import Icon from 'react-native-ionicons';
 import DropDownPicker from 'react-native-dropdown-picker';
-import NewPicker from "../components/TopicPicker";
 
 export default function NewTweetScreen() {
   const[tweet, setTweet] = useState("");
   const[imageUrl, setImageUrl] = useState("");
+  const[selectedValue, setSelectedValue] = useState("");
+  const[creNewTopic, setNewTopic] = React.useState("");
+  const [topic, setTopic] = useState("Elected");
 
   const navigation = useNavigation();
+
+  const NewPicker = () => {
+    return (
+        <View style={styles.opinionPicker}>
+
+
+          <Picker
+              selectedValue={selectedValue}
+              style={{ height: 50, width: 150 }}
+              onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+          >
+            <Picker.Item label="Election" value="java" />
+            <Picker.Item label="Trump" value="j1" />
+            <Picker.Item label="Biden" value="j2" />
+            <Picker.Item label="COVID19" value="j3" />
+            <Picker.Item label="Masks" value="j4" />
+            <Picker.Item label="Christmas" value="j5" />
+          </Picker>
+        </View>
+    );
+  }
 
   //may not be need in current edition
   const getPermissionAsync = async () => {
@@ -69,6 +93,22 @@ export default function NewTweetScreen() {
     return '';
   }
 
+  const creatingTopic = async () => {
+    try{
+      const currentUser = await Auth.currentAuthenticatedUser({bypassCache:true});
+      const newTopic = {
+        topicname: creNewTopic,
+      }
+      console.log(newTopic);
+      await API.graphql(graphqlOperation(createTopic, {input: newTopic}))
+      navigation.goBack();
+      console.warn("Topic posted");
+    }
+    catch (e){
+      console.log(e);
+    }
+  }
+
 
   const onPostTweet = async () => {
     // console.log(`Posting the tweet: ${tweet} Image: ${imageUrl}`);
@@ -84,7 +124,9 @@ export default function NewTweetScreen() {
         content: tweet,
         image,
         userID: currentUser.attributes.sub,
+        topic: selectedValue,
       }
+      console.log(newTweet);
       await API.graphql(graphqlOperation(createTweet, {input: newTweet}))
       navigation.goBack();
 
@@ -94,7 +136,6 @@ export default function NewTweetScreen() {
       console.log(e);
     }
   }
-
   return (
       <SafeAreaView style={styles.container}>
 
@@ -106,8 +147,19 @@ export default function NewTweetScreen() {
           <TouchableOpacity style={styles.button} onPress={onPostTweet}>
             <Text style={styles.buttonText}>Post</Text>
           </TouchableOpacity>
-
         </View>
+
+        <TextInput
+            value={creNewTopic}
+            onChangeText={(value) => setNewTopic(value)}
+            numberOfLines={3}
+            style={styles.input}
+            placeholder={"Admin Enter Topic"}
+        />
+
+        <TouchableOpacity style={styles.button} onPress={creatingTopic}>
+          <Text style={styles.buttonText}>Set Topic</Text>
+        </TouchableOpacity>
 
         <View style={styles.topicPicker}>
           <NewPicker />
@@ -124,7 +176,7 @@ export default function NewTweetScreen() {
                 onChangeText={(value) => setTweet(value)}
                 multiline={true}
                 numberOfLines={3}
-                style={styles.tweetInput}
+                style={styles.input}
                 placeholder={"Give opinion?"}
             />
             <TouchableOpacity onPress={pickImage}>
@@ -134,6 +186,9 @@ export default function NewTweetScreen() {
             <Image source={{uri: imageUrl}} style={styles.image}/>
           </View>
         </View>
+
+
+
 
 
 
@@ -201,5 +256,27 @@ const styles = StyleSheet.create({
   image: {
     width: 250,
     height: 250,
-  }
+  },
+  opinionPicker: {
+    paddingLeft:140,
+    alignItems: "center",
+    textAlign: 'center',
+  },
+  Topic: {
+
+  },
+  admin: {
+    height: 100,
+    maxHeight: 300,
+    fontSize: 20,
+    textAlign: 'center',
+  },
+  input: {
+    backgroundColor: "lightgrey",
+    padding: 10,
+    borderRadius: 4,
+    height: 100,
+    justifyContent: "center",
+    textAlignVertical: "top",
+  },
 });

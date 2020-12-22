@@ -16,6 +16,7 @@ export const onCreateUser = /* GraphQL */ `
           content
           image
           userID
+          topic
           createdAt
           updatedAt
         }
@@ -40,6 +41,7 @@ export const onUpdateUser = /* GraphQL */ `
           content
           image
           userID
+          topic
           createdAt
           updatedAt
         }
@@ -64,11 +66,42 @@ export const onDeleteUser = /* GraphQL */ `
           content
           image
           userID
+          topic
           createdAt
           updatedAt
         }
         nextToken
       }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onCreateTopic = /* GraphQL */ `
+  subscription OnCreateTopic {
+    onCreateTopic {
+      id
+      topicname
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateTopic = /* GraphQL */ `
+  subscription OnUpdateTopic {
+    onUpdateTopic {
+      id
+      topicname
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteTopic = /* GraphQL */ `
+  subscription OnDeleteTopic {
+    onDeleteTopic {
+      id
+      topicname
       createdAt
       updatedAt
     }
@@ -81,6 +114,7 @@ export const onCreateTweet = /* GraphQL */ `
       content
       image
       userID
+      topic
       user {
         id
         username
@@ -115,6 +149,7 @@ export const onUpdateTweet = /* GraphQL */ `
       content
       image
       userID
+      topic
       user {
         id
         username
@@ -149,6 +184,7 @@ export const onDeleteTweet = /* GraphQL */ `
       content
       image
       userID
+      topic
       user {
         id
         username
@@ -199,6 +235,7 @@ export const onCreateLike = /* GraphQL */ `
         content
         image
         userID
+        topic
         user {
           id
           username
@@ -242,6 +279,7 @@ export const onUpdateLike = /* GraphQL */ `
         content
         image
         userID
+        topic
         user {
           id
           username
@@ -285,6 +323,139 @@ export const onDeleteLike = /* GraphQL */ `
         content
         image
         userID
+        topic
+        user {
+          id
+          username
+          name
+          email
+          image
+          createdAt
+          updatedAt
+        }
+        likes {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onCreateTopics = /* GraphQL */ `
+  subscription OnCreateTopics {
+    onCreateTopics {
+      id
+      userID
+      tweetID
+      user {
+        id
+        username
+        name
+        email
+        image
+        tweets {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      tweet {
+        id
+        content
+        image
+        userID
+        topic
+        user {
+          id
+          username
+          name
+          email
+          image
+          createdAt
+          updatedAt
+        }
+        likes {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onUpdateTopics = /* GraphQL */ `
+  subscription OnUpdateTopics {
+    onUpdateTopics {
+      id
+      userID
+      tweetID
+      user {
+        id
+        username
+        name
+        email
+        image
+        tweets {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      tweet {
+        id
+        content
+        image
+        userID
+        topic
+        user {
+          id
+          username
+          name
+          email
+          image
+          createdAt
+          updatedAt
+        }
+        likes {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const onDeleteTopics = /* GraphQL */ `
+  subscription OnDeleteTopics {
+    onDeleteTopics {
+      id
+      userID
+      tweetID
+      user {
+        id
+        username
+        name
+        email
+        image
+        tweets {
+          nextToken
+        }
+        createdAt
+        updatedAt
+      }
+      tweet {
+        id
+        content
+        image
+        userID
+        topic
         user {
           id
           username

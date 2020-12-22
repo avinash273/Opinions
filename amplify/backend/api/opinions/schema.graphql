@@ -7,16 +7,33 @@ type User @model {
   tweets: [Tweet] @connection(keyName: "byUser", fields: ["id"])
 }
 
+type Topic @model {
+  id: ID!
+  topicname: String!
+}
+
 type Tweet @model @key(name: "byUser", fields: ["userID"]) {
   id: ID!
   content: String!
   image: String
   userID: ID!
+  topic: String
   user: User @connection(fields: ["userID"])
   likes: [Like] @connection(keyName: "byTweet", fields:["id"])
 }
 
 type Like
+@model(queries: null)
+@key(name: "byUser", fields: ["userID", "tweetID"])
+@key(name: "byTweet", fields: ["tweetID", "userID"]) {
+  id: ID!
+  userID: ID!
+  tweetID: ID!
+  user: User! @connection(fields: ["userID"])
+  tweet: Tweet! @connection(fields: ["tweetID"])
+}
+
+type Topics
 @model(queries: null)
 @key(name: "byUser", fields: ["userID", "tweetID"])
 @key(name: "byTweet", fields: ["tweetID", "userID"]) {

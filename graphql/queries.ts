@@ -16,6 +16,7 @@ export const getUser = /* GraphQL */ `
           content
           image
           userID
+          topic
           createdAt
           updatedAt
         }
@@ -49,6 +50,33 @@ export const listUsers = /* GraphQL */ `
     }
   }
 `;
+export const getTopic = /* GraphQL */ `
+  query GetTopic($id: ID!) {
+    getTopic(id: $id) {
+      id
+      topicname
+      createdAt
+      updatedAt
+    }
+  }
+`;
+export const listTopics = /* GraphQL */ `
+  query ListTopics(
+    $filter: ModelTopicFilterInput
+    $limit: Int
+    $nextToken: String
+  ) {
+    listTopics(filter: $filter, limit: $limit, nextToken: $nextToken) {
+      items {
+        id
+        topicname
+        createdAt
+        updatedAt
+      }
+      nextToken
+    }
+  }
+`;
 export const getTweet = /* GraphQL */ `
   query GetTweet($id: ID!) {
     getTweet(id: $id) {
@@ -56,6 +84,7 @@ export const getTweet = /* GraphQL */ `
       content
       image
       userID
+      topic
       user {
         id
         username
@@ -95,6 +124,7 @@ export const listTweets = /* GraphQL */ `
         content
         image
         userID
+        topic
         user {
           id
           username

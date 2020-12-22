@@ -43,8 +43,13 @@ export type TweetType = {
   user: UserType,
   content: string,
   image?: string,
+  topic: string,
   numberOfComments?: number,
   numberOfRetweets?: number,
   numberOfLikes?: number,
 }
 
+export type TopicType = {
+  id: string,
+  topicname: string,
+}

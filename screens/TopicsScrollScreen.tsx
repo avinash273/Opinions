@@ -2,12 +2,21 @@ import * as React from 'react';
 import {View} from '../components/Themed';
 import TopicFeed from '../components/Topic/index'
 import {SafeAreaView, StyleSheet, Text, TouchableOpacity} from "react-native";
-import {AntDesign} from "@expo/vector-icons";
+import {AntDesign, MaterialCommunityIcons} from "@expo/vector-icons";
 import Colors from "../constants/Colors";
 import {useNavigation} from "@react-navigation/native";
+import {Auth} from "aws-amplify";
 
 export default function TopicsScrollScreen() {
     const navigation = useNavigation();
+    const logout = async () => {
+        try {
+            await Auth.signOut()
+            // goToAuth()
+        } catch (err) {
+            console.log('error signing out...: ', err)
+        }
+    }
     return (
 
         <SafeAreaView style={styles.containerSafe}>
@@ -17,9 +26,10 @@ export default function TopicsScrollScreen() {
                         <AntDesign name="close" size={30} color={Colors.light.tint}/>
                     </TouchableOpacity>
 
-                    {/*<TouchableOpacity style={styles.button} onPress={onPostTweet}>*/}
-                    {/*    <Text style={styles.buttonText}>Post</Text>*/}
-                    {/*</TouchableOpacity>*/}
+
+                    <TouchableOpacity onPress={logout}>
+                        <MaterialCommunityIcons name={"logout"} size={25} color={Colors.light.tint}/>
+                    </TouchableOpacity>
                 </View>
                 <TopicFeed/>
                 <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)"/>
@@ -46,7 +56,7 @@ const styles = StyleSheet.create({
     headerContainer: {
         width: '100%',
         flexDirection: 'row',
-        // justifyContent: 'space-between',
+        justifyContent: 'space-between',
         padding: 15,
     },
     containerSafe: {

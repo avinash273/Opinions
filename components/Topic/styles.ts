@@ -22,6 +22,12 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         borderRadius: 5
     },
+    headerContainer: {
+        width: '100%',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        padding: 15,
+    },
 });
 
 export default styles;

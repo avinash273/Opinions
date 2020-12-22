@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
 import {View, Text, FlatList, Image, TouchableOpacity} from 'react-native';
 import {API, graphqlOperation} from 'aws-amplify';
-import { listTopics } from '../../graphql/queries';
-import { TopicType } from '../../types';
+import {listTopics} from '../../graphql/queries';
+import {TopicType} from '../../types';
 import styles from "./styles";
 import {useNavigation} from '@react-navigation/native';
 
@@ -10,11 +10,11 @@ export type MainContainerProps = {
     newTopic: TopicType
 }
 
-const MainContainer = ({newTopic} : MainContainerProps) => {
+const MainContainer = ({newTopic}: MainContainerProps) => {
 
     const navigation = useNavigation();
     const onPress = () => {
-        navigation.navigate('NewTweet');
+        navigation.navigate('NewTweet', {paramKey: newTopic.topicname});
     }
 
     return (
@@ -36,27 +36,24 @@ const MainContainer = ({newTopic} : MainContainerProps) => {
 }
 
 
-
 const TopicFeed = () => {
-    const[loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(false);
     const [topic, setTopic] = useState([]);
 
     const fetchTweets = async () => {
         setLoading(true);
-        try{
-             const tweetData = await API.graphql(graphqlOperation(listTopics));
+        try {
+            const tweetData = await API.graphql(graphqlOperation(listTopics));
             // @ts-ignore
             setTopic(tweetData.data.listTopics.items);
-        }
-        catch (e){
+        } catch (e) {
             console.log(e);
-        }
-        finally {
+        } finally {
             setLoading(false);
         }
     }
 
-    useEffect( () => {
+    useEffect(() => {
         fetchTweets();
     }, []);
 
@@ -64,7 +61,7 @@ const TopicFeed = () => {
         <View style={styles.container}>
             <FlatList
                 data={topic}
-                renderItem={({item}) => <MainContainer newTopic={item} />}
+                renderItem={({item}) => <MainContainer newTopic={item}/>}
                 // @ts-ignore
                 keyExtractor={(item) => item.id}
 

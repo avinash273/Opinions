@@ -37,11 +37,9 @@ const MainContainer = ({newTopic} : MainContainerProps) => {
 
 
 
-const Feed = () => {
+const TopicFeed = () => {
     const[loading, setLoading] = useState(false);
     const [topic, setTopic] = useState([]);
-
-
 
     const fetchTweets = async () => {
         setLoading(true);
@@ -78,4 +76,4 @@ const Feed = () => {
     );
 };
 
-export default Feed;
+export default TopicFeed;

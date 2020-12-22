@@ -26,6 +26,11 @@ export default {
               Statistics: 'Statistics',
             },
           },
+          TopicsScrollScreen: {
+            screens: {
+              TopicsScrollScreen: 'TopicsScrollScreen',
+            },
+          },
         },
       },
       NotFound: '*',

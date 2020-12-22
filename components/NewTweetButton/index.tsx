@@ -13,7 +13,7 @@ const NewTweetButton = () => {
     const navigation = useNavigation();
     const onPress = () => {
         // console.warn('Open new tweet');
-        navigation.navigate('NewTweet');
+        navigation.navigate('TopicsScrollScreen');
     }
 
     return (

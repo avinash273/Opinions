@@ -4,6 +4,7 @@ export type RootStackParamList = {
   NotFound: undefined;
   Statistics: undefined;
   Logout: undefined;
+  TopicsScrollScreen: undefined;
 };
 
 export type BottomTabParamList = {
@@ -15,7 +16,6 @@ export type BottomTabParamList = {
 
 export type HomeNavigatorParamList = {
   HomeScreen: undefined;
-
 };
 
 export type TabTwoParamList = {
@@ -29,6 +29,8 @@ export type TabThreeParamList = {
 export type StatisticsParamList = {
   Statistics: undefined;
 };
+
+
 
 export type UserType = {
   id: string,

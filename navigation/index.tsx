@@ -10,6 +10,7 @@ import BottomTabNavigator from './BottomTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
 import NewTweetScreen from "../screens/NewTweetScreen";
 import Statistics from "../screens/Statistics";
+import TopicsScrollScreen from "../screens/TopicsScrollScreen";
 
 // If you are not familiar with React Navigation, we recommend going through the
 // "Fundamentals" guide: https://reactnavigation.org/docs/getting-started
@@ -33,6 +34,7 @@ function RootNavigator() {
         <Stack.Navigator screenOptions={{ headerShown: false }}>
             <Stack.Screen name="Root" component={BottomTabNavigator} />
             <Stack.Screen name="NewTweet" component={NewTweetScreen} />
+            <Stack.Screen name="TopicsScrollScreen" component={TopicsScrollScreen} />
             <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
             <Stack.Screen name="Logout" component={TabThreeScreen} options={{ title: 'Logout!' }} />
             <Stack.Screen name="Statistics" component={Statistics} options={{ title: 'Statistics' }} />

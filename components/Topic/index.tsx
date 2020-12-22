@@ -29,7 +29,7 @@ const MainContainer = ({newTopic}: MainContainerProps) => {
                 style={{height: 50, width: 50, justifyContent: "center", alignItems: "center"}}
                 onPress={onPress}
             >
-                <Text style={{color: "green"}}>Opinion</Text>
+                <Text style={{color: "green", fontSize: 12,fontStyle:"italic"}}>Opinion</Text>
             </TouchableOpacity>
         </View>
     );

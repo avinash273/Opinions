@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {StyleSheet, TouchableOpacity, SafeAreaView, TextInput, Platform, Image, Picker} from 'react-native';
 import {Text, View} from '../components/Themed';
-import {AntDesign, FontAwesome5} from "@expo/vector-icons";
+import {AntDesign, FontAwesome5, Ionicons} from "@expo/vector-icons";
 import Colors from "../constants/Colors";
 import ProfilePicture from "../components/ProfilePicture";
 import {useEffect, useState} from "react";
@@ -132,21 +132,9 @@ export default function NewTweetScreen() {
                 </TouchableOpacity>
             </View>
 
-            <TextInput
-                value={creNewTopic}
-                onChangeText={(value) => setNewTopic(value)}
-                numberOfLines={3}
-                style={styles.input}
-                placeholder={"Admin Enter Topic"}
-            />
-
-            <TouchableOpacity style={styles.button} onPress={creatingTopic}>
-                <Text style={styles.buttonText}>Set Topic</Text>
-            </TouchableOpacity>
-
 
             <View style={styles.newTweetContainer}>
-                <ProfilePicture image={'https://picsum.photos/400'}/>
+                {/*<ProfilePicture image={'https://picsum.photos/400'}/>*/}
                 <View style={styles.inputContainer}>
 
                     <TextInput
@@ -155,14 +143,17 @@ export default function NewTweetScreen() {
                         multiline={true}
                         numberOfLines={3}
                         style={styles.input}
-                        placeholder={"Give opinion?"}
+                        placeholder={"Give us your opinion?"}
                     />
+
                     <TouchableOpacity onPress={pickImage}>
                         {/*<Text style={styles.pickImage}>Choose image</Text>*/}
-                        <FontAwesome5 name="camera" style={styles.pickImage}/>
+                        <Ionicons name="camera-outline" style={styles.pickImage}/>
+                        <Image source={{uri: imageUrl}} style={styles.image}/>
                     </TouchableOpacity>
-                    <Image source={{uri: imageUrl}} style={styles.image}/>
+                    <Text style={styles.privacy}>Your opinion matters!</Text>
                 </View>
+
             </View>
         </SafeAreaView>
     );
@@ -170,29 +161,33 @@ export default function NewTweetScreen() {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        // flex: 1,
         paddingVertical: 30,
-        alignItems: 'flex-start',
+        paddingTop: 20,
+        // paddingHorizontal: 20,
+        // alignItems: 'flex-start',
         backgroundColor: 'white',
         justifyContent: 'center',
+        alignItems: "center",
     },
     button: {
         backgroundColor: Colors.light.tint,
         borderRadius: 30,
     },
-
     buttonText: {
         paddingHorizontal: 20,
         paddingVertical: 10,
         color: 'white',
         fontWeight: 'bold',
         fontSize: 16,
+
     },
     headerContainer: {
         width: '100%',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        padding: 15,
+        padding: 20,
+        paddingTop: 50,
     },
     newTweetContainer: {
         flexDirection: 'row',
@@ -202,46 +197,50 @@ const styles = StyleSheet.create({
         marginLeft: 10,
         // borderWidth : 1,
     },
-    tweetInput: {
-        height: 100,
-        maxHeight: 300,
-        fontSize: 20,
-        textAlign: 'center',
-        // borderColor: 'gray',
-        // borderWidth: 1,
-    },
+
     imageInput: {
         fontSize: 20,
-        // borderColor: 'gray',
-        // borderWidth: 1,
     },
     pickImage: {
+        padding: 20,
+        paddingBottom: 20,
         color: Colors.light.tint,
-        fontSize: 40,
-        textAlign: 'center',
-        paddingLeft: 10,
+        fontSize: 50,
+        textAlign: "center",
+        alignItems: "center",
+        // paddingLeft: 10,
     },
     image: {
-        width: 250,
-        height: 250,
+        // padding: 10,
+        width: 380,
+        height: 380,
+        borderRadius: 30,
+        paddingTop:10,
+
     },
     opinionPicker: {
         paddingLeft: 140,
         alignItems: "center",
         textAlign: 'center',
     },
-    admin: {
-        height: 100,
-        maxHeight: 300,
-        fontSize: 20,
-        textAlign: 'center',
-    },
+
     input: {
-        backgroundColor: "lightgrey",
+        flexDirection: 'row',
+        flexShrink: 1,
+        backgroundColor: "#f5faff",
         padding: 10,
         borderRadius: 4,
-        height: 100,
-        justifyContent: "center",
+        height: 200,
+        justifyContent: "space-evenly",
         textAlignVertical: "top",
+        width: 380,
+        textAlign: "center",
+        fontSize: 18,
+    },
+    privacy: {
+        textAlign: 'center',
+        color: "gray",
+        padding: 100,
+
     },
 });

@@ -1,14 +1,32 @@
 import * as React from 'react';
 import {View} from '../components/Themed';
 import TopicFeed from '../components/Topic/index'
-import {SafeAreaView, StyleSheet, Text, TouchableOpacity} from "react-native";
+import {SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity} from "react-native";
 import {AntDesign, MaterialCommunityIcons} from "@expo/vector-icons";
 import Colors from "../constants/Colors";
 import {useNavigation} from "@react-navigation/native";
-import {Auth} from "aws-amplify";
+import {API, Auth, graphqlOperation} from "aws-amplify";
+import {createTopic} from "../graphql/mutations";
 
 export default function TopicsScrollScreen() {
     const navigation = useNavigation();
+    const [creNewTopic, setNewTopic] = React.useState("");
+
+    const creatingTopic = async () => {
+        try {
+            const currentUser = await Auth.currentAuthenticatedUser({bypassCache: true});
+            const newTopic = {
+                topicname: creNewTopic,
+            }
+            console.log(newTopic);
+            await API.graphql(graphqlOperation(createTopic, {input: newTopic}))
+            navigation.goBack();
+            console.warn("Topic posted");
+        } catch (e) {
+            console.log(e);
+        }
+    }
+
     const logout = async () => {
         try {
             await Auth.signOut()
@@ -25,14 +43,28 @@ export default function TopicsScrollScreen() {
                     <TouchableOpacity onPress={() => navigation.goBack()}>
                         <AntDesign name="close" size={30} color={Colors.light.tint}/>
                     </TouchableOpacity>
-
-
                     <TouchableOpacity onPress={logout}>
                         <MaterialCommunityIcons name={"logout"} size={25} color={Colors.light.tint}/>
                     </TouchableOpacity>
                 </View>
+
+                <View style={styles.topicContainer}>
+                    <TextInput
+                        value={creNewTopic}
+                        onChangeText={(value) => setNewTopic(value)}
+                        numberOfLines={3}
+                        style={styles.input}
+                        placeholder={"Admin Set Topic"}
+                    />
+
+
+                    <TouchableOpacity style={styles.button} onPress={creatingTopic}>
+                        <Text style={styles.buttonText}>Set Topic</Text>
+                    </TouchableOpacity>
+                </View>
+
                 <TopicFeed/>
-                <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)"/>
+
             </View>
         </SafeAreaView>
     );
@@ -48,11 +80,6 @@ const styles = StyleSheet.create({
         fontSize: 30,
         fontWeight: 'bold',
     },
-    separator: {
-        marginVertical: 30,
-        height: 1,
-        width: '80%',
-    },
     headerContainer: {
         width: '100%',
         flexDirection: 'row',
@@ -61,5 +88,34 @@ const styles = StyleSheet.create({
     },
     containerSafe: {
         flex: 1,
+    },
+    button: {
+        backgroundColor: Colors.light.tint,
+        borderRadius: 30,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+
+    buttonText: {
+        paddingHorizontal: 10,
+        // paddingVertical: 5,
+        color: 'white',
+        fontWeight: 'bold',
+        fontSize: 12,
+    },
+    input: {
+        backgroundColor: "#f5faff",
+        height: 40,
+        padding: 10,
+        borderRadius: 10,
+        justifyContent: "center",
+        textAlignVertical: "top",
+        marginLeft: 10,
+        marginRight: 20,
+        width: 220,
+        textAlign: 'center',
+    },
+    topicContainer: {
+        flexDirection: "row",
     },
 });

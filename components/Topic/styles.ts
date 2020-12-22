@@ -7,20 +7,20 @@ const styles = StyleSheet.create({
         textAlign: 'center',
     },
     container: {
-        width: '100%',
+        width: '110%',
         flex: 1,
-        backgroundColor: '#F7F7F7',
-        marginTop: 60
+        backgroundColor: '#f2f2f2',
+        marginTop: 20
     },
     listItem: {
         margin: 10,
         padding: 10,
         backgroundColor: "#FFF",
-        width: "80%",
+        width: "85%",
         flex: 1,
         alignSelf: "center",
         flexDirection: "row",
-        borderRadius: 5
+        borderRadius: 20,
     },
     headerContainer: {
         width: '100%',
@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         padding: 15,
     },
+
 });
 
 export default styles;

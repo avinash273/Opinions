@@ -135,7 +135,7 @@ function HomeNavigator() {
                     ),
                     headerRight: () => (
                         <TouchableOpacity onPress={logout}>
-                            <MaterialCommunityIcons name={"logout"} size={25} color={Colors.light.tint}/>
+                            <MaterialCommunityIcons name={"logout"} size={28} color={Colors.light.tint}/>
                         </TouchableOpacity>
                     ),
                     headerLeft: () => (

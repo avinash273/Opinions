@@ -151,3 +151,17 @@ export const listTweets = /* GraphQL */ `
     }
   }
 `;
+
+export const getSpecificTweets = /* GraphQL */ `
+query MyQuery {
+    listTweets(filter: {topic: {contains: "Digital"}}) {
+        nextToken
+        items {
+            content
+            id
+            createdAt
+            topic
+        }
+    }
+}
+`;

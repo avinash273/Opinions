@@ -31,8 +31,6 @@
 //   },
 // });
 
-//need to correct this
-//no need to correct
 import React from 'react'
 import {
     FlatList,

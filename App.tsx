@@ -26,6 +26,7 @@ function App() {
   const colorScheme = useColorScheme();
 
   //need to change this image
+  //need to try
   const getRandomImage = () => {
     return 'https://picsum.photos/200/300'
   }

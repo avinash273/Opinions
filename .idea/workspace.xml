@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="34ab878a-431d-4aa8-8051-5726b0188694" name="Default Changelist" comment="nonsense push" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="ProjectId" id="1lcHFuZDeU99pgZa9gyfg4OPTVu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/screens" />
+      <recent name="$PROJECT_DIR$/components/Topic" />
+      <recent name="$PROJECT_DIR$/components/TopicPicker" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/TopicAdder" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34ab878a-431d-4aa8-8051-5726b0188694" name="Default Changelist" comment="" />
+      <created>1607889358860</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607889358860</updated>
+      <workItem from="1607889360104" duration="8199000" />
+      <workItem from="1607906155678" duration="188000" />
+      <workItem from="1607906402885" duration="2094000" />
+      <workItem from="1607911372675" duration="6792000" />
+      <workItem from="1607971416228" duration="10332000" />
+      <workItem from="1608171704970" duration="2236000" />
+      <workItem from="1608303292593" duration="7276000" />
+      <workItem from="1608403912353" duration="11839000" />
+      <workItem from="1608472460837" duration="9574000" />
+      <workItem from="1608571473164" duration="7209000" />
+      <workItem from="1608587380155" duration="7370000" />
+      <workItem from="1608599423714" duration="90000" />
+      <workItem from="1608599583134" duration="12811000" />
+      <workItem from="1608652820591" duration="20688000" />
+      <workItem from="1609041636241" duration="88000" />
+      <workItem from="1609267872599" duration="48000" />
+      <workItem from="1609267944799" duration="3273000" />
+      <workItem from="1609738854461" duration="738000" />
+      <workItem from="1610389629119" duration="905000" />
+      <workItem from="1610390847524" duration="284000" />
+      <workItem from="1611115217053" duration="65000" />
+      <workItem from="1612156195850" duration="79000" />
+      <workItem from="1612156301394" duration="231000" />
+      <workItem from="1612156735528" duration="644000" />
+    </task>
+    <task id="LOCAL-00001" summary="checkpoint(opinion app working)">
+      <created>1607908306544</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607908306545</updated>
+    </task>
+    <task id="LOCAL-00002" summary="close commit">
+      <created>1607926956375</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607926956375</updated>
+    </task>
+    <task id="LOCAL-00003" summary="bad commit, prof demo">
+      <created>1608006116011</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608006116012</updated>
+    </task>
+    <task id="LOCAL-00004" summary="bad commit, prof demo. random profile pic url">
+      <created>1608177883951</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608177883951</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Base set. Checkpoint">
+      <created>1608427050266</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608427050266</updated>
+    </task>
+    <task id="LOCAL-00006" summary="checkpoint: All working">
+      <created>1608506354197</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1608506354197</updated>
+    </task>
+    <task id="LOCAL-00007" summary="checkpoint: Topics are loading">
+      <created>1608608740498</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608608740498</updated>
+    </task>
+    <task id="LOCAL-00008" summary="checkpoint: opinion button to topic list">
+      <created>1608612634097</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608612634097</updated>
+    </task>
+    <task id="LOCAL-00009" summary="checkpoint: add topic and give opinion on that topic complete">
+      <created>1608616518979</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1608616518980</updated>
+    </task>
+    <task id="LOCAL-00010" summary="checkpoint: logout button done. All basics func working yay!!">
+      <created>1608618664930</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1608618664930</updated>
+    </task>
+    <task id="LOCAL-00011" summary="checkpoint: feel improved">
+      <created>1608666422536</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1608666422536</updated>
+    </task>
+    <task id="LOCAL-00012" summary="checkpoint: Base complete, search and  statistic are static page">
+      <created>1608703719123</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608703719123</updated>
+    </task>
+    <task id="LOCAL-00013" summary="rouge commit">
+      <created>1609041694196</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1609041694196</updated>
+    </task>
+    <task id="LOCAL-00014" summary="checkpoint: working!">
+      <created>1609283440550</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1609283440550</updated>
+    </task>
+    <task id="LOCAL-00015" summary="checkpoint: working!">
+      <created>1609738971673</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1609738971673</updated>
+    </task>
+    <task id="LOCAL-00016" summary="checkpoint: working!">
+      <created>1609739010925</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1609739010925</updated>
+    </task>
+    <task id="LOCAL-00017" summary="nonsense push">
+      <created>1611115271582</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1611115271582</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="checkpoint(opinion app working)" />
+    <MESSAGE value="close commit" />
+    <MESSAGE value="bad commit, prof demo" />
+    <MESSAGE value="bad commit, prof demo. random profile pic url" />
+    <MESSAGE value="Base set. Checkpoint" />
+    <MESSAGE value="checkpoint: All working" />
+    <MESSAGE value="checkpoint: Topics are loading" />
+    <MESSAGE value="checkpoint: opinion button to topic list" />
+    <MESSAGE value="checkpoint: add topic and give opinion on that topic complete" />
+    <MESSAGE value="checkpoint: logout button done. All basics func working yay!!" />
+    <MESSAGE value="checkpoint: feel improved" />
+    <MESSAGE value="checkpoint: Base complete, search and  statistic are static page" />
+    <MESSAGE value="rouge commit" />
+    <MESSAGE value="checkpoint: working!" />
+    <MESSAGE value="nonsense push" />
+    <option name="LAST_COMMIT_MESSAGE" value="nonsense push" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/screens/NewTweetScreen.tsx</url>
+          <line>130</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/screens/TopicsScrollScreen.tsx</url>
+          <line>56</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -33,6 +33,7 @@ export type StatisticsParamList = {
 
 
 export type UserType = {
+  topic: string;
   id: string,
   name: string,
   username: string,

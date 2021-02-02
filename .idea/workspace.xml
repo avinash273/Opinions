@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34ab878a-431d-4aa8-8051-5726b0188694" name="Default Changelist" comment="nonsense push">
+    <list default="true" id="34ab878a-431d-4aa8-8051-5726b0188694" name="Default Changelist" comment="Checkpoint: username with topic in feed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Tweet/MainContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Tweet/MainContainer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/types.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/types.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Feed/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Feed/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/StyledText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/StyledText.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphql/queries.ts" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/queries.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +90,8 @@
       <workItem from="1611115217053" duration="65000" />
       <workItem from="1612156195850" duration="79000" />
       <workItem from="1612156301394" duration="231000" />
-      <workItem from="1612156735528" duration="2096000" />
+      <workItem from="1612156735528" duration="3222000" />
+      <workItem from="1612236947584" duration="781000" />
     </task>
     <task id="LOCAL-00001" summary="checkpoint(opinion app working)">
       <created>1607908306544</created>
@@ -217,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612157467443</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Checkpoint: username with topic in feed">
+      <created>1612158967011</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1612158967011</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +261,8 @@
     <MESSAGE value="rouge commit" />
     <MESSAGE value="checkpoint: working!" />
     <MESSAGE value="nonsense push" />
-    <option name="LAST_COMMIT_MESSAGE" value="nonsense push" />
+    <MESSAGE value="Checkpoint: username with topic in feed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Checkpoint: username with topic in feed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -261,11 +271,6 @@
           <url>file://$PROJECT_DIR$/screens/NewTweetScreen.tsx</url>
           <line>130</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/screens/TopicsScrollScreen.tsx</url>
-          <line>56</line>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

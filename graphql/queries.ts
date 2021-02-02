@@ -154,7 +154,7 @@ export const listTweets = /* GraphQL */ `
 
 export const getSpecificTweets = /* GraphQL */ `
 query MyQuery {
-    listTweets(filter: {topic: {contains: "Digital"}}) {
+    listTweets(filter: {topic: {contains: "Consfused"}}) {
         nextToken
         items {
             content

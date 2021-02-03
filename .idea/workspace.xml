@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34ab878a-431d-4aa8-8051-5726b0188694" name="Default Changelist" comment="Checkpoint: username with topic in feed">
+    <list default="true" id="34ab878a-431d-4aa8-8051-5726b0188694" name="Default Changelist" comment="bad commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Feed/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Feed/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/StyledText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/StyledText.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphql/queries.ts" beforeDir="false" afterPath="$PROJECT_DIR$/graphql/queries.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +89,8 @@
       <workItem from="1612156195850" duration="79000" />
       <workItem from="1612156301394" duration="231000" />
       <workItem from="1612156735528" duration="3222000" />
-      <workItem from="1612236947584" duration="781000" />
+      <workItem from="1612236947584" duration="885000" />
+      <workItem from="1612328925386" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="checkpoint(opinion app working)">
       <created>1607908306544</created>
@@ -226,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612158967011</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="bad commit">
+      <created>1612241877954</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1612241877954</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +268,8 @@
     <MESSAGE value="checkpoint: working!" />
     <MESSAGE value="nonsense push" />
     <MESSAGE value="Checkpoint: username with topic in feed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Checkpoint: username with topic in feed" />
+    <MESSAGE value="bad commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="bad commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

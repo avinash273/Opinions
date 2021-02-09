@@ -6,7 +6,7 @@ import Tweet from '../Tweet';
 import {API, graphqlOperation} from 'aws-amplify';
 import {listTweets, getSpecificTweets} from '../../graphql/queries';
 
-console.log("test avi3" + getSpecificTweets);
+// console.log("test avi3" + getSpecificTweets);
 const Feed = () => {
 
     const [tweets, setTweets] = useState([]);
@@ -17,7 +17,8 @@ const Feed = () => {
         setLoading(true);
         try {
             const tweetData = await API.graphql(graphqlOperation(listTweets));
-            // console.log(tweetData);
+            console.log("dipshit");
+            console.log(tweetData);
             // @ts-ignore
             setTweets(tweetData.data.listTweets.items);
         } catch (e) {

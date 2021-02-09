@@ -39,12 +39,12 @@ function App() {
     const updateUser = async () => {
       //Get current authenticated user
       const userInfo = await Auth.currentAuthenticatedUser({bypassCache:true});
-      console.log(userInfo);
+      // console.log(userInfo);
 
       if(userInfo){
         //Check if user already exists in database
         const userData = await API.graphql(graphqlOperation(getUser, {id: userInfo.attributes.sub}));
-        console.log(userData);
+        // console.log(userData);
         // @ts-ignore
         if(!userData.data.getUser){
           const user = {
@@ -80,7 +80,7 @@ function App() {
 
 export default withAuthenticator(App);
 /**
- * login: avinash273
+ * login: avinash273, adam, RandomGuy, rick
  * password: Password@123
  */
 

@@ -44,7 +44,8 @@ const Footer = ({tweet}: FooterContainerProps) => {
             // @ts-ignore
             setMyLike(res.data.createLike);
             setLikesCount(likesCount + 1);
-            // console.log(res);
+            console.log("createLike tester2");
+            console.log(res);
         } catch (e) {
             console.log(e);
         }

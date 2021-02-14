@@ -17,8 +17,8 @@ const Feed = () => {
         setLoading(true);
         try {
             const tweetData = await API.graphql(graphqlOperation(listTweets));
-            console.log("dipshit");
-            console.log(tweetData);
+            // console.log(tweetData);
+
             // @ts-ignore
             setTweets(tweetData.data.listTweets.items);
         } catch (e) {

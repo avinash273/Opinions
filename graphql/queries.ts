@@ -119,7 +119,7 @@ export const listTweets = /* GraphQL */ `
     $nextToken: String
   ) {
     listTweets(filter: $filter, limit: $limit, nextToken: $nextToken) {
-      items {
+      items  {
         id
         content
         image

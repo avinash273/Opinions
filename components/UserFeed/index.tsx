@@ -14,10 +14,10 @@ const UserFeed = () => {
         try {
             const tweetData = await API.graphql(graphqlOperation(listTweets));
             const currentUser = await Auth.currentAuthenticatedUser({bypassCache: true});
-            // console.log(tweetData);
+            console.log(tweetData);
             // @ts-ignore
             setTweets(tweetData.data.listTweets.items);
-            console.log("currentUser.attributes.sub"+currentUser.attributes.sub);
+            // console.log("currentUser.attributes.sub"+currentUser.attributes.sub);
 
         } catch (e) {
             console.log(e);

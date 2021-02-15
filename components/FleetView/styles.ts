@@ -16,16 +16,22 @@ const styles = StyleSheet.create({
     },
     image: {
         width: '100%',
-        height: '100%',
+        height: '91%',
         resizeMode: 'cover',
+        borderRadius: 20,
     },
     userHeaderContainer: {
         flexDirection: 'row',
         justifyContent: 'flex-start',
         width: '100%',
         alignItems: 'center',
+        position: 'absolute',
+        padding: 10,
+        top: 50,
     },
-    userNames: {},
+    userNames: {
+        marginLeft: 10,
+    },
     name: {
         fontSize: 18,
         fontWeight: 'bold',

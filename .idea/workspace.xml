@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34ab878a-431d-4aa8-8051-5726b0188694" name="Default Changelist" comment="checkpoint: fleetscreen with dummy data complete">
+    <list default="true" id="34ab878a-431d-4aa8-8051-5726b0188694" name="Default Changelist" comment="aligned profile file inside the story">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/FleetView/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FleetView/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/FleetView/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/FleetView/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/FleetScreen/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/FleetScreen/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +98,7 @@
       <workItem from="1612328925386" duration="28000" />
       <workItem from="1612398471252" duration="1783000" />
       <workItem from="1612843626808" duration="6194000" />
-      <workItem from="1613321036839" duration="13192000" />
+      <workItem from="1613321036839" duration="13987000" />
     </task>
     <task id="LOCAL-00001" summary="checkpoint(opinion app working)">
       <created>1607908306544</created>
@@ -295,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613355357336</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="aligned profile file inside the story">
+      <created>1613356781400</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1613356781400</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +347,8 @@
     <MESSAGE value="checkpoint: fleets complete with dummy data" />
     <MESSAGE value="identation commit" />
     <MESSAGE value="checkpoint: fleetscreen with dummy data complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkpoint: fleetscreen with dummy data complete" />
+    <MESSAGE value="aligned profile file inside the story" />
+    <option name="LAST_COMMIT_MESSAGE" value="aligned profile file inside the story" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

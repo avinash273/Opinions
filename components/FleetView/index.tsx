@@ -15,6 +15,8 @@ const FleetView = (props: FleetViewProps) => {
     return (
         <View style={styles.container}>
 
+            {fleet.image && <Image source={{uri: fleet.image}} style={styles.image}/>}
+            <Text style={styles.text}>{fleet.text}</Text>
             <View style={styles.userHeaderContainer}>
                 <ProfilePicture image={user.image} size={70}/>
                 <View style={styles.userNames}>
@@ -26,9 +28,6 @@ const FleetView = (props: FleetViewProps) => {
 
                 </View>
             </View>
-
-            {fleet.image && <Image source={{uri: fleet.image}} style={styles.image}/>}
-            <Text style={styles.text}>{fleet.text}</Text>
         </View>
     )
 }

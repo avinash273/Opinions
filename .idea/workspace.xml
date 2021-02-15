@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34ab878a-431d-4aa8-8051-5726b0188694" name="Default Changelist" comment="checkpoint: fleets complete with dummy data">
-      <change afterPath="$PROJECT_DIR$/screens/FleetScreen.tsx" afterDir="false" />
+    <list default="true" id="34ab878a-431d-4aa8-8051-5726b0188694" name="Default Changelist" comment="identation commit">
+      <change afterPath="$PROJECT_DIR$/components/FleetView/styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/FleetScreen/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/FleetScreen/styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/UserFleetPreview/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserFleetPreview/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/UserFleetPreview/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserFleetPreview/styles.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation/LinkingConfiguration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/LinkingConfiguration.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navigation/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/navigation/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/FleetScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FleetView/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/types.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/types.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/UserFleetsList" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/FleetView" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -53,13 +53,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/FleetView" />
+      <recent name="$PROJECT_DIR$/screens/FleetScreen" />
       <recent name="$PROJECT_DIR$/components/UserFleetsList" />
       <recent name="$PROJECT_DIR$/components" />
       <recent name="$PROJECT_DIR$/screens" />
-      <recent name="$PROJECT_DIR$/components/Topic" />
-      <recent name="$PROJECT_DIR$/components/TopicPicker" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/screens/FleetScreen" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/components/TopicAdder" />
     </key>
@@ -100,7 +101,7 @@
       <workItem from="1612328925386" duration="28000" />
       <workItem from="1612398471252" duration="1783000" />
       <workItem from="1612843626808" duration="6194000" />
-      <workItem from="1613321036839" duration="8113000" />
+      <workItem from="1613321036839" duration="11753000" />
     </task>
     <task id="LOCAL-00001" summary="checkpoint(opinion app working)">
       <created>1607908306544</created>
@@ -284,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613350383109</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="identation commit">
+      <created>1613351187512</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1613351187512</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +334,8 @@
     <MESSAGE value="Checkpoint: working here starting topic fleets" />
     <MESSAGE value="checkpoint: one user fleet point complete" />
     <MESSAGE value="checkpoint: fleets complete with dummy data" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkpoint: fleets complete with dummy data" />
+    <MESSAGE value="identation commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="identation commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

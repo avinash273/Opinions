@@ -3,6 +3,7 @@ import {Image, Text, View, TouchableWithoutFeedback} from 'react-native';
 import {UserType} from '../../types';
 import ProfilePicture from "../ProfilePicture";
 import styles from "./styles";
+import {useNavigation} from '@react-navigation/native';
 
 
 export type UserFleetPreviewProps = {
@@ -11,10 +12,16 @@ export type UserFleetPreviewProps = {
 
 const UserFleetPreview = (props: UserFleetPreviewProps) => {
 
-    const {user: {topic, image}} = props;
+    const {user: {id, topic, image}} = props;
+    const navigation = useNavigation();
+    const onPress = () => {
+        //navigate to fleet screen
+        navigation.navigate('Fleet', {userId: id});
+        // console.log('Fleets');
+    }
 
     return (
-        <TouchableWithoutFeedback>
+        <TouchableWithoutFeedback onPress={onPress}>
             <View style={styles.container}>
                 <View style={styles.image}>
                     <ProfilePicture image={image}/>

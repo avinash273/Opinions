@@ -56,3 +56,13 @@ export type TopicType = {
     id: string,
     topicname: string,
 }
+
+export type FleetType = {
+    id: string,
+    createdAt: string,
+    user: UserType,
+    type: string,
+    text?: string,
+    image?: string
+
+}

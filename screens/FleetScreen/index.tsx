@@ -59,31 +59,32 @@ const FleetScreen = () => {
         }
 
         let userIndex = -1;
-        for(let i = 0; i < userWithFleets?.length; i++) {
+        for (let i = 0; i < userWithFleets?.length; i++) {
             if (userWithFleets[i].id === user.id) {
                 userIndex = i;
                 break;
             }
         }
-
+        // @ts-ignore
         if (fleetIndex >= user?.fleets?.items.length) {
             if (userWithFleets.length > userIndex + 1) {
                 // go to the next user
                 setUser(userWithFleets[userIndex + 1]);
                 setFleetIndex(0);
             } else {
+                // @ts-ignore
                 setFleetIndex(user?.fleets?.items.length);
             }
         } else if (fleetIndex < 0) {
             // go to the prev user
-            if(userIndex > 0){
+            if (userIndex > 0) {
                 setUser(userWithFleets[userIndex - 1]);
                 setFleetIndex(userWithFleets[userIndex - 1].fleets.items.length - 1);
             } else {
                 setFleetIndex(0)
             }
-        }
-        else {
+        } else {
+            // @ts-ignore
             setFleet(user?.fleets?.items[fleetIndex])
         }
     }, [fleetIndex])

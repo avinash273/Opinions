@@ -3,8 +3,9 @@ import {StyleSheet} from "react-native";
 const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
-        paddingLeft: 5,
-        paddingRight: 5,
+        margin: 5,
+        // paddingLeft: 5,
+        // paddingRight: 5,
     },
     image: {
         backgroundColor: '#ffffff',

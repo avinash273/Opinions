@@ -4,14 +4,14 @@ export default [
         "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/10.png",
         "name": "Vadim Savin",
         "username": "Vadim",
-        "createdAt": "2020-09-04T12:05:39.955Z",
+        "createdAt": "2020-12-04T12:05:39.955Z",
         "topic": "Freezing",
         "fleets": {
             "items": [
                 {
                     "id": "0",
                     "type": "IMAGE",
-                    "createdAt": "2020-11-04T12:05:39.955Z",
+                    "createdAt": "2020-12-04T12:05:39.955Z",
                     "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/vertical-images/1.jpg"
                 },
                 {
@@ -28,7 +28,7 @@ export default [
         "name": "Lukas",
         "username": "Lukas",
         "topic": "Sunny",
-        "createdAt": "2020-09-04T12:05:39.955Z",
+        "createdAt": "2020-12-04T12:05:39.955Z",
         "fleets": {
             "items": [
                 {

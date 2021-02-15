@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'react-native';
+import {Image} from 'react-native';
 
 export type ProfilePictureProps = {
     image?: string,
@@ -8,7 +8,7 @@ export type ProfilePictureProps = {
 
 const ProfilePicture = ({image, size = 60}: ProfilePictureProps) => (
     <Image
-        source={{ uri: image || ''}}
+        source={{uri: image || ''}}
         style={{
             width: size,
             height: size,

@@ -6,12 +6,13 @@ import { Text, View } from '../components/Themed';
 import Feed from "../components/Feed";
 import tweets from '../data/tweets';
 import NewTweetButton from "../components/NewTweetButton";
-import UserFleet from '../components/UserFleetPreview';
+import UserFleetsList from '../components/UserFleetsList';
 
 export default function HomeScreen() {
     return (
         <View style={styles.container}>
-            <UserFleet user={{id: '1', name: 'avinash',topic:'freezing', username:'avinash273', image:'https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png'}}/>
+            {/*<UserFleet user={{id: '1', name: 'avinash',topic:'freezing', username:'avinash273', image:'https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png'}}/>*/}
+
             <Feed />
             <NewTweetButton />
         </View>
@@ -20,7 +21,7 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 55,
+        paddingTop: 5,
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',

@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34ab878a-431d-4aa8-8051-5726b0188694" name="Default Changelist" comment="Checkpoint: working here starting topic fleets">
-      <change afterPath="$PROJECT_DIR$/components/UserFleetPreview/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/UserFleetPreview/styles.ts" afterDir="false" />
+    <list default="true" id="34ab878a-431d-4aa8-8051-5726b0188694" name="Default Changelist" comment="checkpoint: one user fleet point complete">
+      <change afterPath="$PROJECT_DIR$/components/UserFleetsList/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/UserFleetsList/styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/userWithFleets.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Feed/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Feed/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserFleetPreview/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserFleetPreview/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserFleetPreview/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserFleetPreview/styles.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/HomeScreen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/HomeScreen.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/UserFleetsList" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -50,6 +54,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/UserFleetsList" />
       <recent name="$PROJECT_DIR$/components" />
       <recent name="$PROJECT_DIR$/screens" />
       <recent name="$PROJECT_DIR$/components/Topic" />
@@ -96,7 +101,7 @@
       <workItem from="1612328925386" duration="28000" />
       <workItem from="1612398471252" duration="1783000" />
       <workItem from="1612843626808" duration="6194000" />
-      <workItem from="1613321036839" duration="4671000" />
+      <workItem from="1613321036839" duration="7351000" />
     </task>
     <task id="LOCAL-00001" summary="checkpoint(opinion app working)">
       <created>1607908306544</created>
@@ -266,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613322651844</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="checkpoint: one user fleet point complete">
+      <created>1613326886215</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1613326886215</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +318,8 @@
     <MESSAGE value="bad commit!" />
     <MESSAGE value="usenames and passwords" />
     <MESSAGE value="Checkpoint: working here starting topic fleets" />
-    <option name="LAST_COMMIT_MESSAGE" value="Checkpoint: working here starting topic fleets" />
+    <MESSAGE value="checkpoint: one user fleet point complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="checkpoint: one user fleet point complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

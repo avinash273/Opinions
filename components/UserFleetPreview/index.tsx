@@ -11,14 +11,14 @@ export type UserFleetPreviewProps = {
 
 const UserFleetPreview = (props: UserFleetPreviewProps) => {
 
-    const { user: {username, image} } = props;
+    const { user: {topic, image} } = props;
 
     return(
         <View style={styles.container}>
             <View style={styles.image}>
                 <ProfilePicture image={image} />
             </View>
-            <Text style={styles.username}>{username}</Text>
+            <Text style={styles.topicname}>{topic}</Text>
         </View>
     )
 }

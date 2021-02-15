@@ -5,6 +5,7 @@ import tweets from '../../data/tweets';
 import Tweet from '../Tweet';
 import {API, graphqlOperation} from 'aws-amplify';
 import {listTweets, getSpecificTweets} from '../../graphql/queries';
+import UserFleetsList from "../UserFleetsList";
 
 // console.log("test avi3" + getSpecificTweets);
 const Feed = () => {
@@ -41,9 +42,10 @@ const Feed = () => {
                 keyExtractor={(item) => item.id}
                 refreshing={loading}
                 onRefresh={fetchTweets}
+                ListHeaderComponent={UserFleetsList}
             />
         </View>
     );
-};
+}
 
 export default Feed;

@@ -2,7 +2,9 @@ import {StyleSheet} from "react-native";
 
 const styles = StyleSheet.create({
     container: {
-        alignItems: 'center'
+        alignItems: 'center',
+        paddingLeft: 5,
+        paddingRight: 5,
     },
     image: {
         backgroundColor: '#ffffff',
@@ -11,7 +13,7 @@ const styles = StyleSheet.create({
         borderWidth: 3,
         borderColor: '#1683e2'
     },
-    username: {
+    topicname: {
         marginTop: 5,
         fontSize: 15,
         fontWeight: 'bold',

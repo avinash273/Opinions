@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34ab878a-431d-4aa8-8051-5726b0188694" name="Default Changelist" comment="checkpoint: able to navigate fleets front and back">
+    <list default="true" id="34ab878a-431d-4aa8-8051-5726b0188694" name="Default Changelist" comment="close commit: fleets querries not done 2:55:28">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/FleetScreen/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/screens/FleetScreen/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amplify/backend/api/opinions/parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/api/opinions/parameters.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +96,10 @@
       <workItem from="1612328925386" duration="28000" />
       <workItem from="1612398471252" duration="1783000" />
       <workItem from="1612843626808" duration="6194000" />
-      <workItem from="1613321036839" duration="21601000" />
+      <workItem from="1613321036839" duration="21644000" />
+      <workItem from="1613846980722" duration="1115000" />
+      <workItem from="1614394948568" duration="13000" />
+      <workItem from="1614467893462" duration="246000" />
     </task>
     <task id="LOCAL-00001" summary="checkpoint(opinion app working)">
       <created>1607908306544</created>
@@ -322,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613368657121</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="close commit: fleets querries not done 2:55:28">
+      <created>1613370606700</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1613370606700</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +352,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="bad commit, prof demo. random profile pic url" />
     <MESSAGE value="Base set. Checkpoint" />
     <MESSAGE value="checkpoint: All working" />
     <MESSAGE value="checkpoint: Topics are loading" />
@@ -367,7 +376,8 @@
     <MESSAGE value="Checkpoint: image story complete" />
     <MESSAGE value="Checkpoint: time displayed dynamically" />
     <MESSAGE value="checkpoint: able to navigate fleets front and back" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkpoint: able to navigate fleets front and back" />
+    <MESSAGE value="close commit: fleets querries not done 2:55:28" />
+    <option name="LAST_COMMIT_MESSAGE" value="close commit: fleets querries not done 2:55:28" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

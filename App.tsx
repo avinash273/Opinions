@@ -31,6 +31,7 @@ function App() {
     return 'https://picsum.photos/200/300'
   }
 
+  //saveUserToDB
   const saveUserToDB = async (user: { id: any; username: any; name: any; email: any; image: string; }) => {
     await API.graphql(graphqlOperation(createUser, {input: user}))
   }

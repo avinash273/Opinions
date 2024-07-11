@@ -24,6 +24,9 @@ import {getUser} from '../graphql/queries';
 import {TouchableOpacity} from "react-native";
 import {useNavigation} from '@react-navigation/native';
 
+/**
+ * Avinash Shanker
+ */
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
